@@ -6,7 +6,7 @@ DONE - Create variable for random number 19 - 20.
 
 DONE - Create variables for random gem values 1 - 12.
 
-When gem is clicked, total score increments by gem value.
+DONE - When gem is clicked, total score increments by gem value.
 
 If total score === random number, increment wins by 1.
 
