@@ -18,6 +18,8 @@ $("#total-score").html(total)
 
 window.onload = $("#random-number").text(randomNumber);
 
+
+//Codes below only show most recent clicked gem value in total-score div, need to figure out how to get sum of values for buttons clicked
 $("#blue").on("click", function () {
   $("#total-score").html(blueGem);
 });
