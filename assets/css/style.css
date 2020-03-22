@@ -118,3 +118,25 @@ button {
     font-family: 'Lato', sans-serif;
     line-height: 20px; 
 }
+
+@media screen and (max-width: 640px) {
+    #title {
+        width: 300px;
+    }
+
+    #directions {
+        width: 300px;
+    }
+
+    #gems {
+        width: 300px;
+    }
+
+    #your-score-is {
+        width: 300px
+    }
+
+    #total-score {
+        width: 300px
+    }
+}
