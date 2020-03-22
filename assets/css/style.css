@@ -129,7 +129,7 @@ button {
     }
 
     #gems {
-        width: 300px;
+        width: 215px;
     }
 
     #your-score-is {
@@ -138,5 +138,41 @@ button {
 
     #total-score {
         width: 300px
+    }
+
+    #blue {
+        width: 50px;
+        justify-content: center;
+    }
+
+    #green {
+        width: 50px;
+        justify-content: center;
+    }
+
+    #purple {
+        width: 50px;
+        justify-content: center;
+    }
+
+    #red {
+        width: 50px;
+        justify-content: center;
+    }
+
+    #blueimg {
+        width: 35px;
+    }
+
+    #greenimg {
+        width: 35px;
+    }
+
+    #purpleimg {
+        width: 35px;
+    }
+
+    #redimg {
+        width: 35px;
     }
 }
