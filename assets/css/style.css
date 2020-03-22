@@ -119,7 +119,7 @@ button {
     line-height: 20px; 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 576px) {
     #title {
         width: 300px;
     }
