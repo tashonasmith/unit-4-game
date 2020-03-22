@@ -1,0 +1,15 @@
+DONE - Create divs/containers in html: title, instructions, random#, wins & losses, gems, "Your total score is", total score display.
+
+DONE - Gather gem images and save in assets/images.
+
+DONE - Create variable for random number 19 - 20.
+
+DONE - Create variables for random gem values 1 - 12.
+
+When gem is clicked, total score increments by gem value.
+
+If total score === random number, increment wins by 1.
+
+If total score is > random number, increment losses by 1
+
+If total score is >= to random number, generate new random# and random gem values.  Total score = 0.
