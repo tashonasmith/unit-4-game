@@ -12,15 +12,23 @@ var purpleGem = randomIntFromInterval(1, 12);
 var redGem = randomIntFromInterval(1, 12);
 
 var wins = 0;
-$("#wins").text("Wins: " + wins);
-
-var losses = 0
-$("#losses").text("Losses: " + losses);
-
+var losses = 0;
 
 var total = 0;
 
-$("#total-score").text(total)
+function win() {
+    wins = wins + 1
+    $("#wins").text("Wins: " + wins);
+    resetTwo();
+    reset();
+}
+
+function lose() {
+    losses = losses + 1
+    $("#losses").text("Losses: " + losses);
+    resetTwo();
+    reset();
+}
 
 window.onload = $("#random-number").text(randomNumber);
 
@@ -29,7 +37,16 @@ window.onload = $("#random-number").text(randomNumber);
 
 $('#blue').click(() => {
   total = total + blueGem
-  $('#total-score').text(total);
+  $('#total-score').html(total);
+  if (total === randomNumber) {
+      win();
+      reset();
+      resetTwo()
+  } else if (total > randomNumber) {
+      lose();
+      reset();
+      resetTwo();
+  }
 });    
 
 /*$("#blue").on("click", function () {
@@ -38,7 +55,17 @@ $('#blue').click(() => {
 
 $('#green').click(() => {
     total = total + greenGem
-    $('#total-score').text(total);
+    $('#total-score').html(total);
+    console.log(greenGem);
+    if (total === randomNumber) {
+        win();
+        reset();
+        resetTwo()
+    } else if (total > randomNumber) {
+        lose();
+        reset();
+        resetTwo();
+    }
 });   
 
 /*$("#green").on("click", function () {
@@ -47,7 +74,16 @@ $('#green').click(() => {
 
 $('#purple').click(() => {
   total = total + purpleGem
-  $('#total-score').text(total);
+  $('#total-score').html(total);
+  if (total === randomNumber) {
+    win();
+    reset();
+    resetTwo()
+} else if (total > randomNumber) {
+    lose();
+    reset();
+    resetTwo();
+}
 });      
 
 /*$("#purple").on("click", function () {
@@ -56,17 +92,44 @@ $('#purple').click(() => {
 
 $('#red').click(() => {
   total = total + redGem
-  $('#total-score').text(total);
+  $('#total-score').html(total);
+  if (total === randomNumber) {
+    win();
+    reset();
+    resetTwo()
+} else if (total > randomNumber) {
+    lose();
+    reset();
+    resetTwo();
+}
 });    
 
 /*$("#red").on("click", function () {
     $("#total-score").html(redGem);
 });*/  
 
-if (total === randomNumber) {
-  wins++
-};
+/*if (total === randomNumber) {
+  wins++;
+  $("#wins").html("Wins: " + wins);
+  console.log("win");
+};*/
 
-if (total > randomNumber) {
-  losses++
-};
+/*if (total > randomNumber) {
+  losses++;
+  $("#losses").html("Losses: " + losses);
+  console.log("loss");
+};*/
+
+function reset() {
+  total = 0;
+  $("#total-score").text(total);
+}
+
+function resetTwo() {
+  randomNumber = randomIntFromInterval(19, 120);
+  $("#random-number").html(randomNumber);
+  blueGem = randomIntFromInterval(1, 12);
+  greenGem = randomIntFromInterval(1, 12);
+  purpleGem = randomIntFromInterval(1, 12);
+  redGem = randomIntFromInterval(1, 12);  
+}

@@ -8,8 +8,8 @@ DONE - Create variables for random gem values 1 - 12.
 
 DONE - When gem is clicked, total score increments by gem value.
 
-If total score === random number, increment wins by 1.
+DONE - If total score === random number, increment wins by 1.
 
-If total score is > random number, increment losses by 1
+DONE - If total score is > random number, increment losses by 1
 
-If total score is >= to random number, generate new random# and random gem values.  Total score = 0.
+DONE - If total score is >= to random number, generate new random# and random gem values.  Total score = 0.
